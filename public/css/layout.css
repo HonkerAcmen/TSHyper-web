@@ -105,11 +105,13 @@
     font-size: 2rem;
 }
 
+
 .cover .cover-pic img {
     background-size: contain;
     background-repeat: no-repeat;
     width: 35rem;
     height: 35rem;
+    
 }
 
 .between {
@@ -119,6 +121,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.between li{
+    text-align: center;
 }
 
 .between h2 {
