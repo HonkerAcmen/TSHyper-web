@@ -3,14 +3,140 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: green;
     width: 100%;
     height: 60px;
+    border-width: 1px;
+    border-style:none none solid none ;
+    border-color: #DCDFE5;
 }
 
 .head .logo img{
     background-size: contain;
     background-repeat: no-repeat;
-    width: 10rem;
-    height: 10rem;
+    width: 17rem;
+    height: 5rem;
+}
+
+.head .other .el-icon,.el-avatar{
+    margin-right: 40px;
+}
+
+.side{
+    width: 240px;
+    height: 100vh;
+    border-width: 1px;
+    border-style:none solid none none ;
+    border-color: #DCDFE5;
+
+}
+
+.side .pass{
+    margin: 20px 20px;
+    border:0.5px #DCDFE5  solid;
+}
+
+.side .firstpass{
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+}
+
+
+.side .firstpass .p1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.side .firstpass .p2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.side .firstpass .p3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.side .firstpass .p1:hover{
+    border-radius: 5px;
+    background-color: #e2e2e2;
+}
+
+.side .firstpass .p2:hover{
+    border-radius: 5px;
+    background-color: #e2e2e2;
+}
+
+.side .firstpass .p3:hover{
+    border-radius: 5px;
+    background-color: #e2e2e2;
+}
+
+
+
+.side .firstpass p span{
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.side .firstpass .el-icon{
+    margin-right: 20px;
+}
+
+
+
+.side .secondpass{
+    margin-left: 40px;
+}
+
+.side .secondpass p{
+    display: flex;
+}
+
+.side .secondpass span {
+    color: #303030;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+
+
+/* .side .thirdpass{
+} */
+
+.side .thirdpass .p1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.side .thirdpass .p1:hover{
+    border-radius: 5px;
+    background-color: #e2e2e2;
+}
+
+
+.side .thirdpass .el-icon{
+    margin-right: 20px;
+}
+
+.side .thirdpass span{
+    font-size: 13px;
+    color: #303030;
+    font-weight: 500;
+    cursor: pointer;
 }
