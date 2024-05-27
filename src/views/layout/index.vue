@@ -1,11 +1,9 @@
 <template>
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/layout.css">
-
+    <link rel="stylesheet" href="src/assets/css/layout.css">
 
     <!-- head栏 -->
     <div class="head">
-        <div class="icon"><img src="/icons/3.png" alt=""></div>
+        <div class="icon"><img src="../../assets/icons/logo.png" alt=""></div>
         <p>
             <el-link type="primary" href="">产品</el-link>
         </p>
@@ -39,20 +37,20 @@
         </div>
 
         <div class="cover-pic">
-            <img src="/images/design-collaboration-cover.png" alt="">
+            <img src="../../assets/images/design-collaboration-cover.png" alt="">
         </div>
     </div>
 
     <div class="between">
         <h2>如何使用易协作快速管理协作？</h2>
         <ul>
-            <li><img src="/images/ksrm.png" alt="">
+            <li><img src="../../assets/images/ksrm.png" alt="">
                 <p>入门简单</p>
             </li>
-            <li><img src="/images/sjbb.png" alt="">
+            <li><img src="../../assets/images/sjbb.png" alt="">
                 <p>数据管理</p>
             </li>
-            <li><img src="/images/sjfx.png" alt="">
+            <li><img src="../../assets/images/sjfx.png" alt="">
                 <p>随时访问</p>
             </li>
         </ul>

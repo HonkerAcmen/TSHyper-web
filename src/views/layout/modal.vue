@@ -1,5 +1,5 @@
 <template>
-    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="src/assets/css/modal.css">
     <div v-if="visible === 'login'" class="modal">
         <div class="modal-overlay" @click="close"></div>
         <div class="modal-content">
