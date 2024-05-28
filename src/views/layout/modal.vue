@@ -1,5 +1,4 @@
 <template>
-    <link rel="stylesheet" href="src/assets/css/modal.css">
     <div v-if="visible === 'login'" class="modal">
         <div class="modal-overlay" @click="close"></div>
         <div class="modal-content">
@@ -65,6 +64,8 @@ import { useModalStore } from '@/stores/modal'
 import axios from 'axios';
 import { serverAddr, serverLoginAPI, serverRegisterAPI } from '@/hooks/config'
 import {isValidInputName, isValidInputPassword} from '@/utils/valid'
+
+import "/src/assets/css/modal.css"
 
 const account = ref("")
 const passwd = ref("")

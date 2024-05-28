@@ -1,5 +1,4 @@
 <template>
-    <link rel="stylesheet" href="src/assets/css/manage.css">
     <!-- 头部状态栏 -->
     <div class="head">
         <div class="logo"><img src="../../assets/icons/logo.png" alt=""></div>
@@ -43,5 +42,6 @@
 </template>
 
 <script lang="ts" setup>
+import "/src/assets/css/manage.css"
 let user = window.localStorage.getItem('Acc')
 </script>

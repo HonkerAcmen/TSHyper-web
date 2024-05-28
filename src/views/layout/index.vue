@@ -1,6 +1,4 @@
 <template>
-    <link rel="stylesheet" href="src/assets/css/layout.css">
-
     <!-- head栏 -->
     <div class="head">
         <div class="icon"><img src="../../assets/icons/logo.png" alt=""></div>
@@ -29,7 +27,7 @@
     <!-- cover -->
     <div class="cover">
         <div class="text">
-            <h1>管理协调团队</h1>
+            <h1>管理协调班级</h1>
             <h4>简单高效的管理方式，才会有更好的效率。</h4>
             <div class="button" @click="showLoginModal">
                 <span>开始管理</span>
@@ -42,7 +40,7 @@
     </div>
 
     <div class="between">
-        <h2>如何使用易协作快速管理协作？</h2>
+        <h2>易协作如何快速管理班级？</h2>
         <ul>
             <li><img src="../../assets/images/ksrm.png" alt="">
                 <p>入门简单</p>
@@ -57,7 +55,7 @@
     </div>
 
     <div class="under-cover">
-        <h2>小而美的管理协作平台</h2>
+        <h2>小而美的管理平台</h2>
         <div class="button" @click="showRegisterModal">
             <p>免费使用</p>
         </div>
@@ -72,6 +70,8 @@
 import { ref } from 'vue';
 import Modal from './modal.vue';
 import { useModalStore } from '@/stores/modal'
+
+import "/src/assets/css/layout.css"
 
 
 const store = useModalStore()
