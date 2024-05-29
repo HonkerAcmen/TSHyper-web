@@ -71,9 +71,6 @@ import { ref } from 'vue';
 import Modal from './modal.vue';
 import { useModalStore } from '@/stores/modal'
 
-import "/src/assets/css/layout.css"
-
-
 const store = useModalStore()
 
 const showLoginModal = () => {
@@ -90,3 +87,6 @@ const showRegisterModal = () => {
 
 
 </script>
+<style scoped>
+@import "/src/assets/css/layout.css"
+</style>

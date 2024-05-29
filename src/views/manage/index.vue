@@ -42,6 +42,9 @@
 </template>
 
 <script lang="ts" setup>
-import "/src/assets/css/manage.css"
 let user = window.localStorage.getItem('Acc')
 </script>
+
+<style scoped>
+@import "/src/assets/css/manage.css"
+</style>

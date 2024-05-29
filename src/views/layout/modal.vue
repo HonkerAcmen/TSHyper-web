@@ -65,7 +65,6 @@ import axios from 'axios';
 import { serverAddr, serverLoginAPI, serverRegisterAPI } from '@/hooks/config'
 import {isValidInputName, isValidInputPassword} from '@/utils/valid'
 
-import "/src/assets/css/modal.css"
 
 const account = ref("")
 const passwd = ref("")
@@ -240,3 +239,7 @@ const GotoRegister = () => {
 }
 
 </script>
+
+<style scoped>
+@import "/src/assets/css/modal.css"
+</style>
