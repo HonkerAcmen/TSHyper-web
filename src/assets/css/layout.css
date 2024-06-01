@@ -21,8 +21,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     /* left: 0; */
-    width: 17.5rem;
-    height: 5.5rem;
+    width: 16.5rem;
+    height: 3.8rem;
 }
 
 .head .buttons .el-button {
@@ -186,6 +186,7 @@
         0px 0px 22.6px rgba(0, 0, 0, 0.103),
         0px 0px 75px rgba(0, 0, 0, 0.17);
     ;
+    cursor: pointer;
 }
 
 .under-cover .button:hover {

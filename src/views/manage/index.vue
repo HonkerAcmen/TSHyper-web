@@ -13,14 +13,14 @@
     <!-- 侧边栏 -->
     <div class="side">
         <div class="firstpass">
-            <div class="p1">
-                <p><el-icon><HomeFilled /></el-icon><span><a href="/">主页</a></span></p>
+            <div class="p1" @click="gotoLink(strUserHome)">
+                <p><el-icon><HomeFilled /></el-icon><span>主页</span></p>
             </div>
-            <div class="p2">
-                <p><el-icon><Failed /></el-icon><span><a href="/">草稿箱</a></span></p>
+            <div class="p2" @click="gotoLink(strDraftBox)">
+                <p><el-icon><Failed /></el-icon><span>草稿箱</span></p>
             </div>
-            <div class="p3">
-                <p><el-icon><Comment /></el-icon><span><a href="/">我的消息</a></span></p>
+            <div class="p3" @click="gotoLink(strMessage)">
+                <p><el-icon><Comment /></el-icon><span>我的消息</span></p>
             </div>
         </div>
         <div class="pass"></div>
@@ -28,9 +28,9 @@
             <p><el-icon><UserFilled /></el-icon><span>{{ user }}的组织</span></p>
         </div>
         <div class="pass"></div>
-        <div class="thirdpass">
-            <div class="p1">
-            <p><el-icon><Plus /></el-icon><span><a href="/">新建团队</a></span></p>
+        <div class="thirdpass" >
+            <div class="p1" @click="gotoLink(strCreateTeam)">
+            <p><el-icon><Plus /></el-icon><span>新建团队</span></p>
             </div>
         </div>
     </div>
@@ -42,7 +42,23 @@
 </template>
 
 <script lang="ts" setup>
+import router from '@/router';
+
 let user = window.localStorage.getItem('Acc')
+
+// 用户详情页
+const strUserHome = "userhome"
+// 草稿箱
+const strDraftBox = 'draftbox' 
+// 我的消息
+const strMessage = 'message'
+// 新建团队
+const strCreateTeam = 'createteam'
+
+
+function gotoLink(str:string){
+    router.push('/'+str)
+}
 </script>
 
 <style scoped>

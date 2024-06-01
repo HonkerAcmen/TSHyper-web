@@ -105,7 +105,7 @@ async function Login() {
         })
         return
     }
-    else if (passwd.value.length > 6){
+    else if (passwd.value.length < 6){
         ElMessage({
             message: "您输入的密码太短",
             type: 'error',
@@ -176,7 +176,7 @@ async function Register(){
         })
         return
     }
-    else if (reg_passwd.value.length > 6){
+    else if (reg_passwd.value.length < 6){
         ElMessage({
             message: "您输入的密码太短",
             type: 'error',

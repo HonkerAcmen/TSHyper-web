@@ -1,6 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Layout from '@/views/layout/index.vue'
 import Manage from '@/views/manage/index.vue'
+import Userhome from '@/views/userhome/index.vue'
+import Message from '@/views/message/index.vue'
+import Draftbox from '@/views/draftbox/index.vue'
+import CreateTeam from '@/views/createTeam/index.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,8 +24,22 @@ const router = createRouter({
       path: '/home',
       component: Manage
     },
-    
-
+    {
+      path: '/userhome',
+      component: Userhome
+    },
+    {
+      path:'/message',
+      component:Message
+    },
+    {
+      path: '/createteam',
+      component: CreateTeam
+    },
+    {
+      path: '/draftbox',
+      component: Draftbox
+    },
   ]
 })
 
